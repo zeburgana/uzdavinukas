@@ -1,9 +1,1 @@
 testas nr. 1
-žodis 
-iki 
-patalyne 
-labas 
-kaldra 
-	praėjo, raidžių skaičius = 9
-
-testas nr. 2

@@ -63,12 +63,19 @@ static String formattingText(String words, int limit){
 
         if(tempLimit - wholeWords[i].length() < 0){
             line += wholeWords[i].substring(0, tempLimit) + "\r\n"
+            tempLimit -= (wholeWords[i].length())
             wholeWords[i] = wholeWords[i].substring(tempLimit, wholeWords[i].length())
 //            line += wholeWords[i] + "\r\n"
         }
 
         if(tempLimit - wholeWords[i].length() > 0 ) {
             line += wholeWords[i] + " "
+//            wholeWords[i] = wholeWords[i].substring(0,tempLimit)
+            tempLimit -= (wholeWords[i].length() + 1)
+        }
+        if(tempLimit - wholeWords[i].length() > 0 ) {
+            line += wholeWords[i] + " "
+//            wholeWords[i] = wholeWords[i].substring(0,tempLimit)
             tempLimit -= (wholeWords[i].length() + 1)
         }
 
